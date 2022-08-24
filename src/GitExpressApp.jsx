@@ -25,7 +25,7 @@ const GitExpressApp = () => {
 
             {categories.length > 0 ? categories.map((category) => (
                 <GifGrid key={category} category={category} />
-            )) : <p>INGRESE UNA BUSQUEDA</p>}
+            )) : <p className='text-center'>INGRESE UNA BUSQUEDA</p>}
 
 
         </>

@@ -7,6 +7,13 @@ body {
     padding: 60px;
 }
 
+/* utilidades */
+.text-center {
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(95, 134, 160);
+}
+
 input {
     background-color: white;
     border-radius: 5px;
@@ -59,5 +66,5 @@ h3 {
 }
 
 .card img {
-    width: 100%;
+    max-width: 100%;
 }
