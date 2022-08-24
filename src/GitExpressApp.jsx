@@ -4,7 +4,7 @@ import GifGrid from './components/GifGrid';
 
 const GitExpressApp = () => {
 
-    const [categories, setCategories] = useState(["item1", "item2", "item3"]);
+    const [categories, setCategories] = useState([]);
 
     const onCategories = (newValor) => {
 
@@ -23,9 +23,9 @@ const GitExpressApp = () => {
                 onCategories={onCategories}
             />
 
-            {categories.map((category, index) => (
-                <GifGrid key={index} category={category} />
-            ))}
+            {categories.length > 0 ? categories.map((category) => (
+                <GifGrid key={category} category={category} />
+            )) : <p>INGRESE UNA BUSQUEDA</p>}
 
 
         </>
